@@ -37,7 +37,7 @@ const FieldForm = () => {
       </div>
       <div className="self-stretch flex flex-row items-center justify-start py-[0.75rem] px-[1rem] box-border max-w-full">
         <div className="flex-1 flex flex-row items-end justify-start max-w-full">
-        <SelectButton text='Bangalore' isSelected={true}/>
+        <SelectButton text='Bangalore' isSelected={false}/>
         <SelectButton text='Hyderabad' isSelected={false}/>
         <SelectButton text='Chennai' isSelected={false}/>
         </div>

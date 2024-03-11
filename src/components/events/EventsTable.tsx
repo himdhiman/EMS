@@ -1,10 +1,12 @@
-import React from 'react'
-import TableRow from './TableRow'
+import React from "react";
+import TableRow from "./TableRow";
+import SearchIcon from "../../../public/search.svg";
+import Image from "next/image";
 
 const EventsTable = () => {
   return (
-    <section className="flex-1 flex flex-col items-start justify-start pt-[1rem] px-[0rem] pb-[0rem] box-border max-w-[calc(100%_-_311px)] text-left text-[2rem] text-gray font-inter mq825:max-w-full">
-      <div className="self-stretch flex flex-col items-end justify-start gap-[1rem_0rem] max-w-full">
+    <section className="flex flex-col items-start justify-start pt-[1rem] px-[0rem] pb-[0rem] box-border w-[75vw] text-left text-[2rem] text-gray font-inter mq825:w-screen">
+      <div className="self-stretch flex flex-col items-end justify-start gap-[1rem_0rem]">
         <div className="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1rem] pl-[0.938rem] box-border max-w-full">
           <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq675:flex-wrap">
             <div className="w-[18rem] flex flex-col items-start justify-start">
@@ -32,11 +34,11 @@ const EventsTable = () => {
             <div className="flex-1 rounded-xl bg-aliceblue flex flex-row flex-wrap items-center justify-start py-[0.75rem] px-[1rem] box-border gap-[0rem_0.75rem] max-w-full">
               <div className="flex flex-col items-start justify-start">
                 <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                  {/* <img
+                  <Image
                     className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                     alt=""
-                    src="/vector--0-6.svg"
-                  /> */}
+                    src={SearchIcon}
+                  />
                   <div className="absolute top-[-347.5rem] left-[-111.125rem] w-[1.188rem] h-[1.25rem]" />
                 </div>
               </div>
@@ -47,7 +49,7 @@ const EventsTable = () => {
               />
             </div>
           </div>
-          <div className="self-stretch h-[full] flex flex-col items-start justify-start py-[0.75rem] px-[1rem] box-border max-w-full">
+          <div className="self-stretch flex flex-col items-start justify-start py-[0.75rem] px-[1rem] box-border">
             <div className="self-stretch flex-1 rounded-xl bg-whitesmoke box-border overflow-hidden flex flex-col items-start justify-start max-w-full border-[1px] border-solid border-gainsboro-200">
               <div className="self-stretch flex-1 flex flex-col items-start justify-start max-w-full">
                 <div className="self-stretch flex flex-col items-start justify-start">
@@ -103,7 +105,7 @@ const EventsTable = () => {
                     </div>
                   </nav>
                 </div>
-                {/* <div className="w-[full] flex-1 overflow-x-auto flex flex-col items-start justify-start max-w-full"> */}
+                <div className="self-stretch overflow-y-scroll items-start justify-start flex-1 flex flex-col max-w-full">
                   <TableRow
                     name="Design review"
                     timing="10:00 AM - 11:00 AM"
@@ -152,7 +154,7 @@ const EventsTable = () => {
                     propAlignSelf1="unset"
                   />
 
-<TableRow
+                  <TableRow
                     name="Design review"
                     timing="10:00 AM - 11:00 AM"
                     place="Room 1"
@@ -199,14 +201,104 @@ const EventsTable = () => {
                     propAlignSelf="unset"
                     propAlignSelf1="unset"
                   />
-                {/* </div> */}
+                  <TableRow
+                    name="User research"
+                    timing="2:00 PM - 3:00 PM"
+                    place="Room 3"
+                    people="8 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                  <TableRow
+                    name="Demo"
+                    timing="4:00 PM - 5:00 PM"
+                    place="Room 4"
+                    people="10 people"
+                    mode="Zoom"
+                    propWidth="7.875rem"
+                    propAlignSelf="stretch"
+                    propAlignSelf1="stretch"
+                  />
+                  <TableRow
+                    name="Retrospective"
+                    timing="6:00 PM - 7:00 PM"
+                    place="Room 5"
+                    people="5 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                  <TableRow
+                    name="User research"
+                    timing="2:00 PM - 3:00 PM"
+                    place="Room 3"
+                    people="8 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                  <TableRow
+                    name="Demo"
+                    timing="4:00 PM - 5:00 PM"
+                    place="Room 4"
+                    people="10 people"
+                    mode="Zoom"
+                    propWidth="7.875rem"
+                    propAlignSelf="stretch"
+                    propAlignSelf1="stretch"
+                  />
+                  <TableRow
+                    name="Retrospective"
+                    timing="6:00 PM - 7:00 PM"
+                    place="Room 5"
+                    people="5 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                  <TableRow
+                    name="User research"
+                    timing="2:00 PM - 3:00 PM"
+                    place="Room 3"
+                    people="8 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                  <TableRow
+                    name="Demo"
+                    timing="4:00 PM - 5:00 PM"
+                    place="Room 4"
+                    people="10 people"
+                    mode="Zoom"
+                    propWidth="7.875rem"
+                    propAlignSelf="stretch"
+                    propAlignSelf1="stretch"
+                  />
+                  <TableRow
+                    name="Retrospective"
+                    timing="6:00 PM - 7:00 PM"
+                    place="Room 5"
+                    people="5 people"
+                    mode="Google Meet"
+                    propWidth="unset"
+                    propAlignSelf="unset"
+                    propAlignSelf1="unset"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EventsTable
+export default EventsTable;

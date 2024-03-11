@@ -1,6 +1,13 @@
 import React from 'react'
 import "../app/globals.css"
 import EventsTable from '@/components/events/EventsTable'
+import HomeIcon from "../../public/homeIcon.svg"
+import CalenderIcon from "../../public/calenderIcon.svg"
+import RoomIcon from "../../public/roomsIcon.svg"
+import SettingsIcon from "../../public/settingsIcon.svg"
+import FeedbackIcon from "../../public/feedbackIcon.svg"
+import HelpIcon from "../../public/helpIcon.svg"
+import Image from 'next/image'
 
 const Events = () => {
   return (
@@ -13,7 +20,7 @@ const Events = () => {
                 <div className="flex flex-col items-start justify-start">
                   <div className="flex flex-col items-start justify-start">
                     <div className="flex flex-col items-start justify-start">
-                      <div className="relative leading-[1.5rem] font-medium">
+                      <div className="relative text-lg leading-[1.5rem] font-bold">
                         Confetti
                       </div>
                     </div>
@@ -24,12 +31,12 @@ const Events = () => {
                 <div className="self-stretch flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         loading="lazy"
                         alt=""
-                        src="/vector--0.svg"
-                      /> */}
+                        src={HomeIcon}
+                      />
                       <div className="absolute top-[-345.5rem] left-[-91.437rem] w-[1.125rem] h-[1.188rem]" />
                     </div>
                   </div>
@@ -44,11 +51,11 @@ const Events = () => {
                 <div className="self-stretch rounded-xl bg-aliceblue flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         alt=""
-                        src="/vector--0-1.svg"
-                      /> */}
+                        src={CalenderIcon}
+                      />
                       <div className="absolute top-[-348.5rem] left-[-91.437rem] w-[1.125rem] h-[1.25rem]" />
                     </div>
                   </div>
@@ -63,11 +70,11 @@ const Events = () => {
                 <div className="self-stretch flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         alt=""
-                        src="/vector--0-2.svg"
-                      /> */}
+                        src={RoomIcon}
+                      />
                       <div className="absolute top-[-351.5rem] left-[-91.437rem] w-[1rem] h-[1.063rem]" />
                     </div>
                   </div>
@@ -82,11 +89,11 @@ const Events = () => {
                 <div className="self-stretch flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         alt=""
-                        src="/vector--0-3.svg"
-                      /> */}
+                        src={SettingsIcon}
+                      />
                       <div className="absolute top-[-354.5rem] left-[-91.437rem] w-[1.25rem] h-[1.25rem]" />
                     </div>
                   </div>
@@ -114,11 +121,11 @@ const Events = () => {
                 <div className="self-stretch flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         alt=""
-                        src="/vector--0-4.svg"
-                      /> */}
+                        src={FeedbackIcon}
+                      />
                       <div className="absolute top-[-383.25rem] left-[-91.437rem] w-[1.375rem] h-[1rem]" />
                     </div>
                   </div>
@@ -133,11 +140,11 @@ const Events = () => {
                 <div className="self-stretch flex flex-row items-center justify-start py-[0.5rem] px-[0.75rem] gap-[0rem_0.75rem]">
                   <div className="flex flex-col items-start justify-start">
                     <div className="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0">
-                      {/* <img
+                      <Image
                         className="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem]"
                         alt=""
-                        src="/vector--0-5.svg"
-                      /> */}
+                        src={HelpIcon}
+                      />
                       <div className="absolute top-[-386rem] left-[-91.437rem] w-[1.188rem] h-[1.25rem]" />
                     </div>
                   </div>
